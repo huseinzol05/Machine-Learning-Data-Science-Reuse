@@ -32,3 +32,4 @@ jupyter notebook
 ```
 
 ### If you want to use Python3, just change python3-pip, python3-dev, pip3
+#### If you are familiar with MATLAB, numpy and matplotlib got similar syntax with native MATLAB
