@@ -11,6 +11,17 @@
 2. numpy library for linear system library
 3. matplotlib library for drawing and graph library
 4. pandas library for dataframe library
+5. Standardization data
+6. Normalization data
+7. Principal Component explanation
+
+### Extra
+1. Correlation study for drugs in Malaysia
+This is what I do during MAMPU data Hackathon 2017. After pitching session, one of the judges come to me and ask to present myself at Axiata Tower for the next day. Skip to next day, I got job opportunity as full-time Data Scientist with starting wage RM4.5K
+
+I do drugs, bancian correlation study, bancian forecasting, and component analysis for external data.
+
+You can check the system [here](www.huseinhouse.com/mampu)
 
 ### I assumed all able to use command line to install any packages. Linux and Mac got terminal, Windows got Cygwin.
 
