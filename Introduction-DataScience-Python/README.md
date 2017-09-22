@@ -19,9 +19,18 @@
 1. Correlation study for drugs in Malaysia
 This is what I do during MAMPU data Hackathon 2017. After pitching session, one of the judges come to me and ask to present myself at Axiata Tower for the next day. Skip to next day, I got job opportunity as full-time Data Scientist with starting wage RM4.5K
 
-I do drugs, bancian correlation study, bancian forecasting, and component analysis for external data.
+### What included in the system mampu/
+1. Correlation study for drugs in Malaysia
+2. Bancian study
+3. Bancian forecasting
+4. 3D visualization for happiness countries
+5. 3D visualization for economic growth
+6. Use Materialize css framework
+7. Plotly libraries
+8. Mapbox API
+9. Flask API for bancian forecasting using Gradient Tree Boosting
 
-I also used 7. Principal Component explanation in the system.
+I code it from scratch and able to complete it in 24 hours. You can get the code for the system in mampu/
 
 You can check the system [here](http://www.huseinhouse.com/mampu/)
 
