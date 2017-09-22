@@ -21,7 +21,9 @@ This is what I do during MAMPU data Hackathon 2017. After pitching session, one 
 
 I do drugs, bancian correlation study, bancian forecasting, and component analysis for external data.
 
-You can check the system [here](www.huseinhouse.com/mampu)
+I also used 7. Principal Component explanation in the system.
+
+You can check the system [here](http://www.huseinhouse.com/mampu/)
 
 ### I assumed all able to use command line to install any packages. Linux and Mac got terminal, Windows got Cygwin.
 
