@@ -1,0 +1,388 @@
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/init.css"  media="screen,projection"/>
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.css' rel='stylesheet' />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="js/heatmap-correlation.js"></script>
+</head>
+<body>
+
+  <ul id="slide-out" class="side-nav fixed z-depth-2">
+    <li class="center no-padding">
+      <div class="blue darken-2 white-text" style="height: 128px;">
+        <div class="row">
+          <img style="margin-top: 5%;" width="100" height="100" src="https://avatars0.githubusercontent.com/u/30925355?v=4&s=200" class="circle responsive-img" />
+        </div>
+      </div>
+    </li>
+    <li id="dash_dashboard"><a class="waves-effect" href="/mampu/"><b>Dadah Study</b></a></li>
+    <li id="dash_dashboard"><a class="waves-effect" href="#!"><b>Bancian Study</b></a></li>
+    <li id="dash_dashboard"><a class="waves-effect" href="/mampu/other/"><b>Other Study</b></a></li>
+  </ul>
+
+  <header>
+    <ul class="dropdown-content" id="user_dropdown">
+      <li><a class="blue-text" href="#!">Profile</a></li>
+      <li><a class="blue-text" href="#!">Logout</a></li>
+    </ul>
+
+    <nav class="blue" role="navigation">
+      <div class="nav-wrapper">
+        <a data-activates="slide-out" class="button-collapse show-on-" href="#!"><img style="margin-top: 17px; margin-left: 5px;" src="https://res.cloudinary.com/dacg0wegv/image/upload/t_media_lib_thumb/v1463989873/smaller-main-logo_3_bm40iv.gif" /></a>
+
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a class='right dropdown-button' href='' data-activates='user_dropdown'><i class=' material-icons'>account_circle</i></a>
+          </li>
+        </ul>
+
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+      </div>
+    </nav>
+
+    <nav>
+      <div class="nav-wrapper blue darken-2">
+        <a style="margin-left: 20px;" class="breadcrumb" href="#!">Visualization</a>
+        <a class="breadcrumb" href="http://www.data.gov.my/data/ms_MY/group/bancian">Bancian study</a>
+
+        <div style="margin-right: 20px;" id="timestamp" class="right"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="row">
+      <div class="col s12">
+        <div id='map' style="margin-top: 20px;"></div>
+        <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiaHVzZWluem9sMDUiLCJhIjoiY2o3ZzVhanpwMTU5cjJ4cXV2eTQ4a2kzcyJ9.H6zXizUmNbeiihg9sZoIBg';
+        var map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mapbox/streets-v9',
+          center: [107.523193, 4.625020],
+          zoom: 5
+        });
+
+        map.on('load', function () {
+          map.addSource("states", {
+            "type": "geojson",
+            "data": "https://raw.githubusercontent.com/jnewbery/MapMalaysia/master/public/data/states.geojson"
+          });
+
+          map.addLayer({
+            "id": "state-fills",
+            "type": "fill",
+            "source": "states",
+            "layout": {},
+            "paint": {
+              "fill-color": "#627BC1",
+              "fill-opacity": 0.5
+            }
+          });
+
+          map.addLayer({
+            "id": "state-borders",
+            "type": "line",
+            "source": "states",
+            "layout": {},
+            "paint": {
+              "line-color": "#627BC1",
+              "line-width": 2
+            }
+          });
+
+          map.addLayer({
+            "id": "state-fills-hover",
+            "type": "fill",
+            "source": "states",
+            "layout": {},
+            "paint": {
+              "fill-color": "#627BC1",
+              "fill-opacity": 1
+            },
+            "filter": ["==", "name", ""]
+          });
+
+          var popup = new mapboxgl.Popup({
+            closeButton: false,
+            closeOnClick: false
+          });
+
+          map.on("mousemove", "state-fills", function(e) {
+            map.setFilter("state-fills-hover", ["==", "Name", e.features[0].properties.Name]);
+          });
+
+          map.on("mouseleave", "state-fills", function() {
+            map.setFilter("state-fills-hover", ["==", "Name", ""]);
+          });
+
+          map.on('mouseenter', 'state-fills-hover', function(e) {
+            map.getCanvas().style.cursor = 'pointer';
+            popup.setLngLat(e.features[0].geometry.coordinates[0][20])
+            .setHTML("<p>" + e.features[0].properties.Name + "</p><p>Lelaki(E+3): " + overall[e.features[0].properties.Name]['Lelaki'] + "</p><p>Perempuan(E+3): " + overall[e.features[0].properties.Name]['Perempuan'] + "</p>")
+            .addTo(map);
+          });
+
+          map.on('mouseleave', 'state-fills-hover', function() {
+            map.getCanvas().style.cursor = '';
+            popup.remove();
+          });
+
+          map.on('click', 'state-fills-hover', function (e) {
+            setgraph(e.features[0].properties.Name);
+          });
+        });
+        </script>
+      </div>
+    </div>
+
+    <div class="row" id="slidedownhell" style="display: none;">
+      <div class="col s12">
+        <div align="center" class="card">
+          <div class="row">
+            <div id="myDiv_graph" style="height: 400px;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12">
+        <div align="center" class="card">
+          <div class="row">
+            <div id="myDiv_year" style="height: 400px;"></div>
+          </div>
+          <script>
+          var trace1 = {
+            x: ylabel,
+            y: total_man,
+            mode: 'scatter',
+            name: 'Total Men (E+3)'
+          }
+          var trace2 = {
+            x: ylabel,
+            y: total_woman,
+            mode: 'scatter',
+            name: 'Total Women (E+3)'
+          }
+          var layout = {
+            'title': 'Gender Growth Rate',
+            xaxis: {
+              autotick: false
+            }
+          }
+          Plotly.newPlot('myDiv_year', [trace1, trace2], layout);
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12">
+        <div align="center" class="card">
+          <div class="row">
+            <div id="myDiv" style="height: 400px;"></div>
+          </div>
+          <script>
+          var data = [
+            {
+              z: heatmap,
+              x: xlabel,
+              y: ylabel,
+              type: 'heatmap'
+            }
+          ];
+          var layout = {
+            'title': 'States Growth Heatmap',
+            'annotations': []
+          }
+          for(var i = 0; i < ylabel.length; i++){
+            for(var j = 0; j < xlabel.length; j++){
+              var result = {
+                xref: 'x1',
+                yref: 'y1',
+                x: xlabel[j],
+                y: ylabel[i],
+                text: heatmap[i][j].toFixed(2),
+                font: {
+                  family: 'Arial',
+                  size: 12,
+                  color: 'rgb(50, 171, 96)'
+                },
+                showarrow: false,
+                font: {
+                  color: 'white'
+                }
+              };
+              layout.annotations.push(result);
+            }
+          }
+
+          Plotly.newPlot('myDiv', data, layout);
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s2">
+        <select id="year">
+          <option value="" disabled selected>Choose your option</option>
+          <option value="4">2015</option>
+          <option value="5">2016</option>
+          <option value="6">2017</option>
+          <option value="7">2018</option>
+          <option value="8">2019</option>
+        </select>
+        <label>Year</label>
+      </div>
+      <div class="input-field col s2">
+        <select id="state">
+          <option value="" disabled selected>Choose your option</option>
+          <option value="0">Johor</option>
+          <option value="1">Kedah</option>
+          <option value="2">Kelantan</option>
+          <option value="3">Melaka</option>
+          <option value="4">Negeri Sembilan</option>
+          <option value="5">Pahang</option>
+          <option value="6">Penang</option>
+          <option value="7">Perak</option>
+          <option value="8">Perlis</option>
+          <option value="9">Sabah</option>
+          <option value="10">Sarawak</option>
+          <option value="11">Selangor</option>
+          <option value="12">Terengganu</option>
+          <option value="13">W.P Kuala Lumpur</option>
+          <option value="14">W.P Labuan</option>
+          <option value="15">W.P Putrajaya</option>
+        </select>
+        <label>State</label>
+      </div>
+      <div class="input-field col s2">
+        <select id="age">
+          <option value="" disabled selected>Choose your option</option>
+          <option value="0">0 - 4</option>
+          <option value="1">10 - 14</option>
+          <option value="2">15 - 19</option>
+          <option value="3">20 - 24</option>
+          <option value="4">25 - 29</option>
+          <option value="5">30 - 34</option>
+          <option value="6">35 - 39</option>
+          <option value="7">40 - 44</option>
+          <option value="8">45 - 49</option>
+          <option value="9">5 - 9</option>
+          <option value="10">50 - 54</option>
+          <option value="11">55 - 59</option>
+          <option value="12">60 - 64</option>
+          <option value="13">65 - 69</option>
+          <option value="14">70 - 74</option>
+          <option value="15">75 - 79</option>
+          <option value="16">80 - 84</option>
+          <option value="17">85+</option>
+        </select>
+        <label>Age</label>
+      </div>
+      <div class="input-field col s2">
+        <select id="gender">
+          <option value="" disabled selected>Choose your option</option>
+          <option value="1">Lelaki</option>
+          <option value="2">Perempuan</option>
+        </select>
+        <label>Gender</label>
+      </div>
+      <button id="submitbutton" class="waves-effect waves-light btn blue" style="margin-top: 20px;margin-left: 20px;">Predict</button>
+    </div>
+    <div class="row" id="rowpredict" style="display: none;">
+      <div class="col s12">
+        <div align="center" class="card">
+          <div class="row">
+            <div id="myDiv_predict" style="height: 400px;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fixed-action-btn click-to-toggle" style="bottom: 45px; right: 24px;">
+      <a class="btn-floating btn-large pink waves-effect waves-light">
+        <i class="large material-icons">add</i>
+      </a>
+      <ul>
+        <li>
+          <a class="btn-floating grenn"><i class="material-icons">email</i></a>
+          <a href="" class="btn-floating fab-tip">Contact Husein</a>
+        </li>
+        <li>
+          <a class="btn-floating pink"><i class="material-icons">favorite_border</i></a>
+          <a href="" class="btn-floating fab-tip">Give a love</a>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="blue page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h5 class="white-text">Give me some food!</h5>
+          <ul id='credits'>
+            <li>
+              I am a jobless, please feed me!
+            </li>
+            <li>
+              <a href="http://www.huseinhouse.com/myhouse/">www.huseinhouse.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <span>Made By <a style='font-weight: bold;' href="https://github.com/mongoool">Mongoool</a></span>
+      </div>
+    </div>
+  </footer>
+</body>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/init.js"></script>
+<script>
+$('#submitbutton').click(function(){
+  if($('#gender').val() == null || $('#age').val() == null || $('#year').val() == null || $('#state').val() == null){
+    Materialize.toast("Insert all details", 4000);
+    return;
+  }
+  xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+      ylabel_temp = ylabel.slice();
+      ylabel_temp.push((2011 + parseInt($('#year').val())).toString());
+      if($('#gender').val() == '1'){
+        label_temp = 'Total Men (E+3)';
+      }
+      else{
+        label_temp = 'Total Women (E+3)';
+      }
+      var trace1 = {
+        x: ylabel_temp,
+        y: JSON.parse(this.responseText),
+        mode: 'scatter',
+        name: label_temp
+      }
+      var layout = {
+        'title': dictionary[$('#state').val()] + ' Gender Growth Rate for ' + $('#age').val(),
+        xaxis: {
+          autotick: false
+        }
+      }
+      Plotly.newPlot('myDiv_predict', [trace1], layout);
+      $('#rowpredict').slideDown(500).delay(1000);
+    }
+  };
+  xmlhttp.open("GET", "http://www.huseinhouse.com:8011/mampu?year=" + $('#year').val() + "&state=" + $('#state').val() + "&age=" + $('#age').val() + "&gender=" + $('#gender').val(), true);
+  xmlhttp.send();
+})
+</script>
+</html>
