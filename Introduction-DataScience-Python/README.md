@@ -14,11 +14,10 @@
 5. Standardization data
 6. Normalization data
 7. Principal Component explanation
+8. KDE Density
 
 ### Extra
 1. Correlation study for drugs in Malaysia
-
-This is what I do during MAMPU data Hackathon 2017. After pitching session, one of the judges come to me and ask to present myself at Axiata Tower for the next day. Skip to next day, I got job opportunity as full-time Data Scientist with starting wage RM4.5K
 
 ### What included in the system mampu/
 1. Correlation study for drugs in Malaysia
