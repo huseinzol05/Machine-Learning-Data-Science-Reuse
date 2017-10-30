@@ -15,7 +15,7 @@ def pickle_function(func, name):
     with open(name + '.p', 'wb') as fopen:
         pickle.dump(g, fopen)
 
-def unpickle_function(func, name):
+def unpickle_function(name):
     with open(name + '.p', 'rb') as fopen:
         func = pickle.load(fopen)
     return dill.loads(func)
@@ -23,6 +23,5 @@ def unpickle_function(func, name):
 string = 'Ricky Wilson The Best FRONTMAN/Kaiser Chiefs The Best BAND Xxxx Thank you Kaiser Chiefs for an incredible year of gigs and memories to cherish always :) Xxxxxxx'
 print(clearstring(string))
 pickle_function(clearstring, 'clearstring')
-g = None
 g = unpickle_function(g, 'clearstring')
 print(g(string))
