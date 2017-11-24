@@ -25,6 +25,7 @@ Techniques that I reused for my machine learning problems without deep learning
 ### Image processing
 1. Augmentation
 2. Featuring
+3. hog-featuring
 
 ### Classification
 1. stacking model
@@ -33,3 +34,6 @@ Techniques that I reused for my machine learning problems without deep learning
 ### Regression
 1. stacking model
 2. featuring
+
+### Binary
+1. stacking XGB with LGB
