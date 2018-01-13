@@ -27,6 +27,10 @@ Techniques that I reused for my machine learning problems without deep learning
 2. Featuring
 3. hog-featuring
 
+### Signal processing
+1. Augmentation
+2. Featuring
+
 ### Classification
 1. stacking model
 2. featuring
@@ -37,3 +41,6 @@ Techniques that I reused for my machine learning problems without deep learning
 
 ### Binary
 1. stacking XGB with LGB
+
+### Stacking
+1. stack multiple models from sklearn regressor with XGB
