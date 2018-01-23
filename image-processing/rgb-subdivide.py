@@ -10,7 +10,6 @@ imgflatten = img.reshape([-1, img.shape[2]])
 # subdivide rgb vectorizing
 # good to determine color differentation, like (day, night)
 def process_image(image, blocks = 4):
-	# return: size of 4 * 4 * 4
     feature = [0] * blocks * blocks * blocks
     pixel_count = 0
     for i in range(image.shape[0]):

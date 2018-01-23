@@ -5,6 +5,7 @@ import os
 from scipy.misc import imread
 from scipy.misc import imresize
 from scipy.misc import imsave
+from keras.preprocessing import image
 
 input_size = 256
 # folder location

@@ -1,15 +1,6 @@
 # Machine-Learning-Reuse
 Techniques that I reused for my machine learning problems without deep learning
 
-### Introduction to Data Science
-1. Short introduction for Python
-2. numpy library for linear system library
-3. matplotlib library for drawing and graph library
-4. pandas library for dataframe library
-5. Standardization data
-6. Normalization data
-7. Principal Component explanation
-8. Correlation study
 
 ### NLP
 1. Bag Of Word
@@ -21,15 +12,16 @@ Techniques that I reused for my machine learning problems without deep learning
 7. xgboosting
 8. sklearn pipeline
 9. lightbgm
+10. N-gram
 
 ### Image processing
-1. Augmentation
-2. Featuring
+1. Augmentation (flip, rotate, shifting, zoom, shear, channel shift, grayscale, contrast, saturation)
+2. RGB subdivide
 3. hog-featuring
 
 ### Signal processing
-1. Augmentation
-2. Featuring
+1. Augmentation (pitching, speed, distribution noise, shifting, silent shifting)
+2. Featuring (mfcc, log-energy, feature cube, power spectrum)
 
 ### Classification
 1. stacking model
@@ -41,6 +33,7 @@ Techniques that I reused for my machine learning problems without deep learning
 
 ### Binary
 1. stacking XGB with LGB
+2. ensemble genetic algorithm, deep feed-forward neural network, xgb and lgb
 
 ### Stacking
 1. stack multiple models from sklearn regressor with XGB
