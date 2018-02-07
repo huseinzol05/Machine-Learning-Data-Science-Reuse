@@ -1,6 +1,5 @@
-# Machine-Learning-Reuse
-Techniques that I reused for my machine learning problems without deep learning
-
+# Machine-Learning-Data-Science-Reuse
+Techniques that I reused for my machine learning and big data problems without deep learning
 
 ### NLP
 1. Bag Of Word
@@ -13,6 +12,7 @@ Techniques that I reused for my machine learning problems without deep learning
 8. sklearn pipeline
 9. lightbgm
 10. N-gram
+11. Topic Modelling
 
 ### Image processing
 1. Augmentation (flip, rotate, shifting, zoom, shear, channel shift, grayscale, contrast, saturation)
@@ -37,3 +37,14 @@ Techniques that I reused for my machine learning problems without deep learning
 
 ### Stacking
 1. stack multiple models from sklearn regressor with XGB
+
+### Stochastic study
+1. Cryptocurrencies correlation
+2. Predict crpytocurrencies multiple stack
+3. Simple stock analysis
+
+### Big-query
+1. integrate big-query with Pandas Python
+
+### Visualization
+1. Geographic using basemap
