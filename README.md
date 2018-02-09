@@ -48,3 +48,4 @@ Techniques that I reused for my machine learning and big data problems without d
 
 ### Visualization
 1. Geographic using basemap
+2. Folium map and time analysis
