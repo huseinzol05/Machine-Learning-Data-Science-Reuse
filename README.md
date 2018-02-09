@@ -42,6 +42,7 @@ Techniques that I reused for my machine learning and big data problems without d
 1. Cryptocurrencies correlation
 2. Predict crpytocurrencies multiple stack
 3. Simple stock analysis
+4. ARIMA
 
 ### Big-query
 1. integrate big-query with Pandas Python
