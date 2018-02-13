@@ -50,3 +50,6 @@ Techniques that I reused for my machine learning and big data problems without d
 ### Visualization
 1. Geographic using basemap
 2. Folium map and time analysis
+
+### Markov
+1. Independent variables on weather forecast
