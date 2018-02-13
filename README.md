@@ -53,3 +53,4 @@ Techniques that I reused for my machine learning and big data problems without d
 
 ### Markov
 1. Independent variables on weather forecast
+2. Dependent variables on text dataset
