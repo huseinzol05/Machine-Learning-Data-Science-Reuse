@@ -1,7 +1,7 @@
 # Machine-Learning-Data-Science-Reuse
 Techniques that I reused for my machine learning and big data problems without deep learning
 
-### NLP
+### Natural Language Processing
 1. Bag Of Word
 2. TF-IDF
 3. Hashing algorithm
@@ -22,8 +22,9 @@ Techniques that I reused for my machine learning and big data problems without d
 ### Signal processing
 1. Augmentation (pitching, speed, distribution noise, shifting, silent shifting)
 2. Featuring (mfcc, log-energy, feature cube, power spectrum)
+3. Convert spectrogram to WAV
 
-### Classification
+### Multi-class Classification
 1. stacking model
 2. featuring
 
@@ -31,7 +32,7 @@ Techniques that I reused for my machine learning and big data problems without d
 1. stacking model
 2. featuring
 
-### Binary
+### Binary Classification
 1. stacking XGB with LGB
 2. ensemble genetic algorithm, deep feed-forward neural network, xgb and lgb
 
