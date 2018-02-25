@@ -18,6 +18,7 @@ Techniques that I reused for my machine learning and big data problems without d
 1. Augmentation (flip, rotate, shifting, zoom, shear, channel shift, grayscale, contrast, saturation)
 2. RGB subdivide
 3. hog-featuring
+4. image segmentation, nucleus
 
 ### Signal processing
 1. Augmentation (pitching, speed, distribution noise, shifting, silent shifting)
