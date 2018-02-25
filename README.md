@@ -19,6 +19,7 @@ Techniques that I reused for my machine learning and big data problems without d
 2. RGB subdivide
 3. hog-featuring
 4. image segmentation, nucleus
+5. K Nearest Neighbors on PCA / NMF
 
 ### Signal processing
 1. Augmentation (pitching, speed, distribution noise, shifting, silent shifting)
