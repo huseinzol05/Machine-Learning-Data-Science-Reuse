@@ -55,6 +55,10 @@ Techniques that I reused for my machine learning and big data problems without d
 1. Geographic using basemap
 2. Folium map and time analysis
 3. graph nodes for a person most spoke to whom
+4. Israel graph visualization
+5. Israel political landscape
+6. Distribution age vs type for library
+7. Growth study for library
 
 ### Markov
 1. Independent variables on weather forecast
