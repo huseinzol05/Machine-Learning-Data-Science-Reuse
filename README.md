@@ -69,6 +69,6 @@ Techniques that I reused for my machine learning and big data problems without d
 1. Independent variables on weather forecast
 2. Dependent variables on text dataset
 
-### Text normalization
+### English-text normalization
 1. normalized texts (Dates, Measure, Decimals, Cardinals, Electronic - URL, Currency - Dollars, Telephone Numbers)
 2. normalized texts (Cardinal, Digit, Ordinal, Letters, Address, Telephone, Electronic, Fractions, Money)
