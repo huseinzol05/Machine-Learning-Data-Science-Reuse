@@ -6,7 +6,7 @@ Techniques that I reused for my machine learning and big data problems without d
 2. TF-IDF
 3. Hashing algorithm
 4. Speech Tagging
-5. Baiyes Classification
+5. Bayes Classification
 6. Linear System Classification
 7. xgboosting
 8. sklearn pipeline
