@@ -14,6 +14,11 @@ Techniques that I reused for my machine learning and big data problems without d
 10. N-gram
 11. Topic Modelling
 
+### Suggestion Engine using Nearest-Euclidean and Gaussian Distribution
+1. Anime
+2. Game
+3. Movie
+
 ### Image processing
 1. Augmentation (flip, rotate, shifting, zoom, shear, channel shift, grayscale, contrast, saturation)
 2. RGB subdivide
