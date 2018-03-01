@@ -1,6 +1,10 @@
 # Machine-Learning-Data-Science-Reuse
 Techniques that I reused for my machine learning and big data problems without deep learning
 
+## *WARNING, THIS REPOSITORY WILL LACK OF COMMENT, LACK OF DOCUMENTATION AND LACK OF STORY TELLING.*
+## *Most of visualization are self-explain, and at-least required basic understanding in statistics and python.*
+## *Some of visualization will not able to visualize because Github not able to render specific libraries that are using svg based, so please run it on any machine to see the results*
+
 ### Natural Language Processing
 1. Bag Of Word
 2. TF-IDF
@@ -18,6 +22,7 @@ Techniques that I reused for my machine learning and big data problems without d
 1. Anime
 2. Game
 3. Movie
+4. Kickstarter projects
 
 ### Image processing
 1. Augmentation (flip, rotate, shifting, zoom, shear, channel shift, grayscale, contrast, saturation)
@@ -52,6 +57,7 @@ Techniques that I reused for my machine learning and big data problems without d
 2. Predict crpytocurrencies multiple stack
 3. Simple stock analysis
 4. ARIMA
+5. TESLA Market study
 
 ### Big-query
 1. integrate big-query with Pandas Python
