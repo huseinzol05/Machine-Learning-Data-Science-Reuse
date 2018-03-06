@@ -7,7 +7,7 @@ Techniques that I reused for my machine learning and big data problems without d
 
 *WARNING, THIS REPOSITORY WILL LACK OF COMMENT, LACK OF DOCUMENTATION AND LACK OF STORY TELLING.*
 
-*Most of visualization are self-explain, and at-least required basic understanding in statistics and python.*
+*Most of visualization are self-explained, and at-least required basic understanding in statistics and python.*
 
 *Some of visualization will not able to visualize because Github not able to render specific libraries that are using svg based, so please run it on any machine to see the results.*
 
@@ -76,6 +76,7 @@ Techniques that I reused for my machine learning and big data problems without d
 5. Israel political landscape
 6. Distribution age vs type for library
 7. Growth study for library
+8. Spooky social network analysis
 
 ### Markov
 1. Independent variables on weather forecast
