@@ -11,6 +11,9 @@ Techniques that I reused for my machine learning and big data problems without d
 
 *Some of visualization will not able to visualize because Github not able to render specific libraries that are using svg based, so please run it on any machine to see the results.*
 
+### Preprocessing
+1. Handle missing values
+
 ### Natural Language Processing
 1. Bag Of Word
 2. TF-IDF
