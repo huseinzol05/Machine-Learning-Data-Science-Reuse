@@ -81,6 +81,7 @@ Techniques that I reused for my machine learning and big data problems without d
 6. Distribution age vs type for library
 7. Growth study for library
 8. Spooky social network analysis
+9. botnet attack analysis
 
 ### Markov
 1. Independent variables on weather forecast
