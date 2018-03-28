@@ -14,6 +14,7 @@ Techniques that I reused for my machine learning and big data problems without d
 ### Preprocessing
 1. Handle missing values
 2. Rescaling (log, vector normalization, standardization, min-max scaling, boxcox)
+3. Features understanding
 
 ### Natural Language Processing
 1. Bag Of Word
