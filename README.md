@@ -83,6 +83,7 @@ Techniques that I reused for my machine learning and big data problems without d
 7. Growth study for library
 8. Spooky social network analysis
 9. botnet attack analysis
+10. Plotly geo-mapping 101
 
 ### Markov
 1. Independent variables on weather forecast
