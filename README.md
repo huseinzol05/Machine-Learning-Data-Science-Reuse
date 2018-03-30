@@ -28,6 +28,7 @@ Techniques that I reused for my machine learning and big data problems without d
 9. lightbgm
 10. N-gram
 11. Topic Modelling
+12. Naive-Bayes-SVM on hate speech
 
 ### Suggestion Engine using Nearest-Euclidean and Gaussian Distribution
 1. Anime
