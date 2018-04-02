@@ -74,17 +74,19 @@ Techniques that I reused for my machine learning and big data problems without d
 ### Big-query
 1. integrate big-query with Pandas Python
 
+### Network study
+1. graph nodes for a person most spoke to whom
+2. Spooky social network analysis
+
 ### Visualization
 1. Geographic using basemap
 2. Folium map and time analysis
-3. graph nodes for a person most spoke to whom
-4. Israel graph visualization
-5. Israel political landscape
-6. Distribution age vs type for library
-7. Growth study for library
-8. Spooky social network analysis
-9. botnet attack analysis
-10. Plotly geo-mapping 101
+3. Israel graph visualization
+4. Israel political landscape
+5. Distribution age vs type for library
+6. Growth study for library
+7. botnet attack analysis
+8. Plotly geo-mapping 101
 
 ### Markov
 1. Independent variables on weather forecast
