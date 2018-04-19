@@ -33,6 +33,7 @@ Techniques that I reused for my machine learning and big data problems without d
 11. Topic Modelling
 12. Naive-Bayes-SVM on hate speech
 13. Black panther visualization using wordclouds, semantic and kmean similarity network
+14. Semantic similarity
 
 ### Suggestion Engine using Nearest-Euclidean and Gaussian Distribution
 1. Anime
