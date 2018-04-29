@@ -96,6 +96,7 @@ Techniques that I reused for my machine learning and big data problems without d
 7. botnet attack analysis
 8. Plotly geo-mapping 101
 9. Plotly bombing mapping visualization
+10. Easy plotly using cufflink
 
 ### Markov
 1. Independent variables on weather forecast
