@@ -78,6 +78,7 @@ Techniques that I reused for my machine learning and big data problems without d
 
 ### Big-query
 1. integrate big-query with Pandas Python
+2. Medicare queries with plotly visualization
 
 ### Network study
 1. graph nodes for a person most spoke to whom
