@@ -11,6 +11,21 @@ Techniques that I reused for my machine learning and big data problems without d
 
 *Some of visualization will not able to visualize because Github not able to render specific libraries that are using svg based, so please run it on any machine to see the results.*
 
+## Table of contents
+  * [R vs Python](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#r-vs-python)
+  * [Preprocessing](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#preprocessing)
+  * [Natural Language Processing](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#natural-language-processing)
+  * [Suggestion Engine](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#suggestion-engine-using-nearest-euclidean-and-gaussian-distribution)
+  * [Image processing](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#image-processing)
+  * [Signal processing](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#signal-processing)
+  * [Stacking](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#stacking)
+  * [Stochastic study](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#stochastic-study)
+  * [Big-query](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#big-query)
+  * [Network study](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#network-study)
+  * [Visualization](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#visualization)
+  * [Markov](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#markov)
+  * [English-text normalization](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#english-text-normalization)
+
 ### R vs Python
 1. CSV, Data Manipulation, Visualization
 
@@ -23,17 +38,16 @@ Techniques that I reused for my machine learning and big data problems without d
 1. Bag Of Word
 2. TF-IDF
 3. Hashing algorithm
-4. Speech Tagging
-5. Bayes Classification
-6. Linear System Classification
-7. xgboosting
-8. sklearn pipeline
-9. lightbgm
-10. N-gram
-11. Topic Modelling
-12. Naive-Bayes-SVM on hate speech
-13. Black panther visualization using wordclouds, semantic and kmean similarity network
-14. Semantic similarity
+4. Bayes Classification
+5. SVM
+6. xgboosting
+7. sklearn pipeline
+8. lightbgm
+9. N-gram
+10. Topic Modelling
+11. Naive-Bayes-SVM on hate speech
+12. Black panther visualization using wordclouds, semantic and kmean similarity network
+13. Semantic similarity
 
 ### Suggestion Engine using Nearest-Euclidean and Gaussian Distribution
 1. Anime
@@ -52,22 +66,12 @@ Techniques that I reused for my machine learning and big data problems without d
 ### Signal processing
 1. Augmentation (pitching, speed, distribution noise, shifting, silent shifting)
 2. Featuring (mfcc, log-energy, feature cube, power spectrum)
-3. Convert spectrogram to WAV
-
-### Multi-class Classification
-1. stacking model
-2. featuring
-
-### Regression
-1. stacking model
-2. featuring
-
-### Binary Classification
-1. stacking XGB with LGB
-2. ensemble genetic algorithm, deep feed-forward neural network, xgb and lgb
 
 ### Stacking
-1. stack multiple models from sklearn regressor with XGB
+1. binary
+2. regression
+3. multi-classes
+4. stack multiple models from sklearn regressor with XGB
 
 ### Stochastic study
 1. Cryptocurrencies correlation
@@ -85,6 +89,8 @@ Techniques that I reused for my machine learning and big data problems without d
 2. Spooky social network analysis
 3. Taxi nodes analysis
 4. Stackoverflow tags analysis
+5. donald trump news social network
+6. najib razak twitter social network
 
 ### Visualization
 1. Geographic using basemap
@@ -98,6 +104,7 @@ Techniques that I reused for my machine learning and big data problems without d
 9. Plotly bombing mapping visualization
 10. Easy plotly using cufflink
 11. Plotly pokemon data
+12. Rare visualization
 
 ### Markov
 1. Independent variables on weather forecast
