@@ -25,6 +25,7 @@ Techniques that I reused for my machine learning and big data problems without d
   * [Visualization](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#visualization)
   * [Markov](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#markov)
   * [English-text normalization](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#english-text-normalization)
+  * [Signal Processing](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#signal-processing)
 
 ### R vs Python
 1. CSV, Data Manipulation, Visualization
@@ -64,9 +65,16 @@ Techniques that I reused for my machine learning and big data problems without d
 5. K Nearest Neighbors on PCA / NMF
 6. SVD study on nearest neighbors
 
-### Signal processing
+### Sound processing
 1. Augmentation (pitching, speed, distribution noise, shifting, silent shifting)
 2. Featuring (mfcc, log-energy, feature cube, power spectrum)
+
+### Signal processing
+1. Blurring on 1D Signal (loop, and FFT)
+2. Blurring on 2D Signal (loop)
+3. Conv 2 signals
+4. Pass-filter for freqs
+5. Signal smoothing
 
 ### Stacking
 1. binary
