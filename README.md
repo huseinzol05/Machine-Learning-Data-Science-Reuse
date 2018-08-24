@@ -75,6 +75,7 @@ Techniques that I reused for my machine learning and big data problems without d
 3. Conv 2 signals
 4. Pass-filter for freqs
 5. Signal smoothing
+6. Signal cross-correlation
 
 ### Stacking
 1. binary
