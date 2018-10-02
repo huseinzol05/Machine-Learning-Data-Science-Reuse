@@ -115,6 +115,7 @@ Techniques that I reused for my machine learning and big data problems without d
 10. Easy plotly using cufflink
 11. Plotly pokemon data
 12. Rare visualization
+13. Dynamic map visualization using plotly and folium
 
 ### Markov
 1. Independent variables on weather forecast
