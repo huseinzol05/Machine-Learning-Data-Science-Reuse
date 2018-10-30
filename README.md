@@ -1,5 +1,6 @@
 # Machine-Learning-Data-Science-Reuse
-Techniques that I reused for my machine learning and big data problems without deep learning
+
+Gathers machine learning and data science techniques for problem solving.
 
 <img src="https://vignette.wikia.nocookie.net/2007scape/images/8/8c/Genie.png/revision/latest?cb=20151018052559" align="right">
 
