@@ -19,6 +19,7 @@ Gathers machine learning and data science techniques for problem solving.
   * [Suggestion Engine](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#suggestion-engine-using-nearest-euclidean-and-gaussian-distribution)
   * [Image processing](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#image-processing)
   * [Signal processing](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#signal-processing)
+  * [Sound Processing](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#sound-processing)
   * [Stacking](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#stacking)
   * [Stochastic study](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#stochastic-study)
   * [Big-query](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#big-query)
@@ -26,7 +27,6 @@ Gathers machine learning and data science techniques for problem solving.
   * [Visualization](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#visualization)
   * [Markov](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#markov)
   * [English-text normalization](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#english-text-normalization)
-  * [Signal Processing](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#signal-processing)
 
 ### R vs Python
 1. CSV, Data Manipulation, Visualization
