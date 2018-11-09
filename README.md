@@ -65,6 +65,7 @@ Gathers machine learning and data science techniques for problem solving.
 4. image segmentation, nucleus
 5. K Nearest Neighbors on PCA / NMF
 6. SVD study on nearest neighbors
+7. Image wrapping to full A4
 
 ### Sound processing
 1. Augmentation (pitching, speed, distribution noise, shifting, silent shifting)
