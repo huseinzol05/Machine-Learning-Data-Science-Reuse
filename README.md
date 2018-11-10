@@ -6,11 +6,13 @@ Gathers machine learning and data science techniques for problem solving.
 
 ## Warning
 
-*WARNING, THIS REPOSITORY WILL LACK OF COMMENT, LACK OF DOCUMENTATION AND LACK OF STORY TELLING.*
+THIS REPOSITORY WILL LACK OF COMMENT, LACK OF DOCUMENTATION AND LACK OF STORY TELLING. PURPOSELY FOR SELF-REUSE.
 
-*Most of visualization are self-explained, and at-least required basic understanding in statistics and python.*
+Most of visualizations are self-explained, and at-least required basic understanding in statistics and python.
 
-*Some of visualization will not able to visualize because Github not able to render specific libraries that are using svg based, so please run it on any machine to see the results.*
+Some of visualization will not able to visualize because Github not able to render specific libraries that are using svg based, so please run it on any machine to see the results.
+
+Why Genie? Because he can solved anything!
 
 ## Table of contents
   * [R vs Python](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#r-vs-python)
@@ -19,7 +21,6 @@ Gathers machine learning and data science techniques for problem solving.
   * [Suggestion Engine](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#suggestion-engine-using-nearest-euclidean-and-gaussian-distribution)
   * [Image processing](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#image-processing)
   * [Signal processing](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#signal-processing)
-  * [Sound Processing](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#sound-processing)
   * [Stacking](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#stacking)
   * [Stochastic study](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#stochastic-study)
   * [Big-query](https://github.com/huseinzol05/Machine-Learning-Data-Science-Reuse#big-query)
@@ -36,21 +37,19 @@ Gathers machine learning and data science techniques for problem solving.
 2. Rescaling (log, vector normalization, standardization, min-max scaling, boxcox)
 3. Features understanding
 4. Detecting outliers
+5. Encoding type comparison
 
 ### Natural Language Processing
 1. Bag Of Word
 2. TF-IDF
 3. Hashing algorithm
-4. Bayes Classification
-5. SVM
-6. xgboosting
-7. sklearn pipeline
-8. lightbgm
-9. N-gram
-10. Topic Modelling
-11. Naive-Bayes-SVM on hate speech
-12. Black panther visualization using wordclouds, semantic and kmean similarity network
-13. Semantic similarity
+4. Models gathering (Bayes, SVM, XGB, LightGBM)
+5. sklearn pipeline
+6. N-gram
+7. Topic Modelling
+8. Naive-Bayes-SVM on hate speech
+9. Black panther visualization using wordclouds, semantic and kmean similarity network
+10. Semantic similarity on Malaysia hot topics
 
 ### Suggestion Engine using Nearest-Euclidean and Gaussian Distribution
 1. Anime
@@ -67,10 +66,6 @@ Gathers machine learning and data science techniques for problem solving.
 6. SVD study on nearest neighbors
 7. Image wrapping to full A4
 
-### Sound processing
-1. Augmentation (pitching, speed, distribution noise, shifting, silent shifting)
-2. Featuring (mfcc, log-energy, feature cube, power spectrum)
-
 ### Signal processing
 1. Blurring on 1D Signal (loop, and FFT)
 2. Blurring on 2D Signal (loop)
@@ -78,6 +73,8 @@ Gathers machine learning and data science techniques for problem solving.
 4. Pass-filter for freqs
 5. Signal smoothing
 6. Signal cross-correlation
+7. Augmentation (pitching, speed, distribution noise, shifting, silent shifting)
+8. Featuring (mfcc, log-energy, feature cube, power spectrum)
 
 ### Stacking
 1. binary
@@ -118,6 +115,7 @@ Gathers machine learning and data science techniques for problem solving.
 11. Plotly pokemon data
 12. Rare visualization
 13. Dynamic map visualization using plotly and folium
+14. Kaggle 2018 Report
 
 ### Markov
 1. Independent variables on weather forecast
