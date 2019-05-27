@@ -1,4 +1,10 @@
-## How-to
+<p align="center">
+    <a href="#readme">
+        <img alt="logo" width="50%" src="traffic.png">
+    </a>
+</p>
+
+## How-to, original competition, https://www.aiforsea.com/traffic-management
 
 1. Download and unzip dataset using [dataset.ipynb](dataset.ipynb).
 

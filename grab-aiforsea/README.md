@@ -1,3 +1,11 @@
+<p align="center">
+    <a href="#readme">
+        <img alt="logo" width="50%" src="grab.png">
+    </a>
+</p>
+
+## How-to, original competition, https://www.aiforsea.com/
+
 ## How-to
 
 1. Go to any folders and execute instructions inside README.md
