@@ -6,8 +6,6 @@
 
 ## How-to, original competition, https://www.aiforsea.com/
 
-## How-to
-
 1. Go to any folders and execute instructions inside README.md
 
 ## Notes
