@@ -12,21 +12,21 @@
 
 3. Augmentation using [augmentation.ipynb](augmentation.ipynb).
 
-  1. Random flip
-  2. Random rotate
-  3. Random shift
-  4. Random zoom
-  5. Random shear
-  6. Random channel shift
-  7. Random gray
-  8. Random contrast
-  9. Random brightness
-  10. Random saturation
-  11. Change light to night
-  12. Random shadow
-  13. Random snow
-  14. Random rain
-  15. Random fog
+    1. Random flip
+    2. Random rotate
+    3. Random shift
+    4. Random zoom
+    5. Random shear
+    6. Random channel shift
+    7. Random gray
+    8. Random contrast
+    9. Random brightness
+    10. Random saturation
+    11. Change light to night
+    12. Random shadow
+    13. Random snow
+    14. Random rain
+    15. Random fog
 
 4. Download pretrained Inception-Resnet-V2 [download-checkpoint.ipynb](download-checkpoint.ipynb)
 
