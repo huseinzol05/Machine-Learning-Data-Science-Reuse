@@ -1,6 +1,6 @@
 <p align="center">
     <a href="#readme">
-        <img alt="logo" width="50%" src="grab.png">
+        <img alt="logo" width="70%" src="grab.png">
     </a>
 </p>
 
@@ -13,4 +13,4 @@
 ## Notes
 
 1. Do not use these solution 100%.
-2. This is for education purpose, not intended for to get a job.
+2. This is for education purpose, not intended to get a job.
